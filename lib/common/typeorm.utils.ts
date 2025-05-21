@@ -15,6 +15,7 @@ import { EntityClassOrSchema } from '../interfaces/entity-class-or-schema.type';
 import { DEFAULT_DATA_SOURCE_NAME } from '../typeorm.constants';
 
 const logger = new Logger('TypeOrmModule');
+const crypto = require('crypto');
 
 /**
  * This function generates an injection token for an Entity or Repository
